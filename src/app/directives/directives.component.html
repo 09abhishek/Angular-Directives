@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button
+        class="btn btn-primary"
+        (click)="oddnum=!oddnum">
+        <!--a=!a is the toggle logic to execute the specific if <div>-->
+        Press to toggle between Odd/Even Number!!</button>
+      <br>
+      <br>
+      <ul class="list-group">
+        <div *ngIf="oddnum">
+          <p>Printing Odd Numbers</p>
+          <li class="list-group-item"
+            [ngClass]="{odd: odd % 2 !==0}"
+              [ngStyle]="{backgroundColor: odd % 2 !==0 ? 'black' : 'Pink'}"
+            *ngFor="let Odd of odnum">
+            <!--ngClass="{odd: odd % 2 !==0}" -->
+            {{Odd}}
+          </li>
+        </div>
+        <div *ngIf="!oddnum">
+          <p>Printing Even Numbers</p>
+          <li class="list-group-item"
+              [ngClass]="{even: even % 2 ==0}"
+              [ngStyle]="{backgroundColor: odd % 2 !==0 ? 'yellow' : 'Pink'}"
+              *ngFor="let even of evnum">
+            {{even}}
+
+          </li>
+        </div>
+      </ul>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.container {
+  margin-top: 30px;
+}
+.odd {
+  font-weight: bolder;
+  color: red;
+}
+.even {
+  font-weight: bolder;
+  color: green;
+}
+
+/*.red{ background-color : red; }*/
+/*.bold{ font-weight : bold; }*/
+/*.blue{ color : blue; }*/
