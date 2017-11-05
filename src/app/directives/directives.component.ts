@@ -10,6 +10,7 @@ export class DirectivesComponent implements OnInit {
   odnum = [1, 3, 5];
   evnum = [2, 4];
   oddnum ;
+  bg = ' ';
   constructor() { }
 
   ngOnInit() {
