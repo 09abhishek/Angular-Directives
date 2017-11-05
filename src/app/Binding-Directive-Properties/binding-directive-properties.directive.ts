@@ -18,6 +18,7 @@ export class BindingDirectivePropertiesDirective implements OnInit {
     this.backgroundColor = this.defaultColor;
   }
   ngOnInit() {
+    this.backgroundColor = this.defaultColor;
   }
 }
 
