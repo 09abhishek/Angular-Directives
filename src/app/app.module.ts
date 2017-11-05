@@ -9,8 +9,8 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 import { BetterHighlightHostListenerDirective } from './better-highlight-hostlistener/better-highlight-host-listener.directive';
-import {BetterHighlightHostBindingDirective} from "./better-highlight-hostbinding/better-host-binding-directive";
-
+import {BetterHighlightHostBindingDirective} from './better-highlight-hostbinding/better-host-binding-directive';
+import { BindingDirectivePropertiesDirective } from './Binding-Directive-Properties/binding-directive-properties.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +18,8 @@ import {BetterHighlightHostBindingDirective} from "./better-highlight-hostbindin
       BasicHighlightDirective,
       BetterHighlightDirective,
       BetterHighlightHostListenerDirective,
-      BetterHighlightHostBindingDirective
+      BetterHighlightHostBindingDirective,
+      BindingDirectivePropertiesDirective
   ],
   imports: [
     BrowserModule,
