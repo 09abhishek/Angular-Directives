@@ -11,6 +11,8 @@ import { BetterHighlightDirective } from './better-highlight/better-highlight.di
 import { BetterHighlightHostListenerDirective } from './better-highlight-hostlistener/better-highlight-host-listener.directive';
 import {BetterHighlightHostBindingDirective} from './better-highlight-hostbinding/better-host-binding-directive';
 import { BindingDirectivePropertiesDirective } from './Binding-Directive-Properties/binding-directive-properties.directive';
+import {UnlessDirective} from '../Binding-custom-structural-Directive/unless.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { BindingDirectivePropertiesDirective } from './Binding-Directive-Propert
       BetterHighlightDirective,
       BetterHighlightHostListenerDirective,
       BetterHighlightHostBindingDirective,
-      BindingDirectivePropertiesDirective
+      BindingDirectivePropertiesDirective,
+      UnlessDirective
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,8 @@
       <br>
       <br>
       <ul class="list-group">
-        <div *ngIf="oddnum">
+          <!--replaced this statement with the below one to use custom str.directive ... <div *ngIf = "oddnum">-->
+        <div *appUnless = "oddnum">
           <p>Printing Odd Numbers</p>
           <li class="list-group-item"
             [ngClass]="{odd: odd % 2 !==0}"
@@ -19,7 +20,7 @@
             {{Odd}}
           </li>
         </div>
-        <div *ngIf="!oddnum">
+        <div *appUnless="!oddnum">
           <p>Printing Even Numbers</p>
           <li class="list-group-item"
               [ngClass]="{even: even % 2 ==0}"
@@ -36,7 +37,7 @@
       <p appBetterHighlight>Background color Style with help of Renderer 2  directive.</p>
       <p appBetterHighlightHostListener> Background color Style with help of HostListener directive. (Hover mouse here) </p>
       <p appHostBindingDirective> Background color Style with help of HostBinding directive. (Hover mouse here) </p>
-      <p appBindingDirectiveProperties> Background color Style with help of HostBinding directive. (Hover mouse here) </p>
+      <p appBindingDirectiveProperties [defaultColor]= "'grey'" [highlightColor]="'ora'"> Background color Style with help of Binding Properties directive (Hover mouse here) </p>
     </div>
   </div>
 </div>

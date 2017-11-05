@@ -4,12 +4,15 @@
     <div class="row">
         <div class="col-xs-12">
     <p>This is the main app component</p>
-
-    <p data-ng-class="{red:bg, bold:fw, blue:c}">Using Object</p>
-
-    Add Background : <input type="checkbox" data-ng-model="bg"/> <br />
-    Add Font-Weight : <input type="checkbox" data-ng-model="fw"/> <br />
-    Add Text Color : <input type="checkbox" data-ng-model="c"/> <br/>
+            <b>
+    <p>  Testing *ngSwitch Directive as a replacement of *ngIf</p>
+            <div [ngSwitch] = "value">
+                <p *ngSwitchCase=" 5 "> Value is 5</p>
+                <p *ngSwitchCase=" 10 "> Value is 10</p>
+                <p *ngSwitchCase=" 15 "> Value is 15</p>
+                <p *ngSwitchCase=" 25 "> Value is 25</p>
+                <p *ngSwitchDefault >Default Value is 50</p>
+            </div></b>
         </div>
     </div>
 </div>
