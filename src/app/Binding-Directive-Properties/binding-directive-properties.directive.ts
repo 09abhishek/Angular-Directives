@@ -1,5 +1,5 @@
 import {Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2} from '@angular/core';
-
+// Using this way we can set the attribute from outside or we csn even override them
 @Directive({
   selector: '[appBindingDirectiveProperties]'
 })
